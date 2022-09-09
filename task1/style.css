@@ -33,6 +33,9 @@ body {
     background-color: #ffffff;
     box-shadow: 1px 3px #d9dce0;
     border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+
 }
 
 p {
@@ -101,6 +104,39 @@ p {
 }
 
 
+.overlay{
+    background-color: #ffffff;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100%);
+    transition: .7s;
+    transition-property: all;
+
+}
+
+.em{
+    font-size: 20px;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    padding: 8px 8px 0 0;
+}
+
+.over-container{
+    text-align: center;
+}
+
+.card-1:hover .overlay{
+    opacity: 1;
+    transform: translateY(0);
+
+}
 
 /* media query */
 
