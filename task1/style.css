@@ -4,19 +4,22 @@
 * {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    margin: 0;
 }
 
 body {
     background-color: #ebeff3;
+    min-height: 100vh;
 }
 
 
 .card-container {
     width: 100%;
-    padding: 20px 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    position: absolute;
+    left: 0;
 
 }
 
@@ -104,7 +107,7 @@ p {
 }
 
 
-.overlay{
+.overlay {
     background-color: #ffffff;
     position: absolute;
     height: 100%;
@@ -120,7 +123,7 @@ p {
 
 }
 
-.em{
+.em {
     font-size: 20px;
     position: absolute;
     top: 2px;
@@ -128,15 +131,91 @@ p {
     padding: 8px 8px 0 0;
 }
 
-.over-container{
+.over-container {
     text-align: center;
 }
 
-.card-1:hover .overlay{
+.card-1:hover .overlay {
     opacity: 1;
     transform: translateY(0);
 
 }
+
+
+/* Side Nav */
+
+ul.side-nav {
+    background-color: #1b334c;
+    width: 80px;
+    float: left;
+    padding-left: 0;
+    height: 100vh;
+    position: fixed;
+    z-index: 2;
+}
+
+ul li.side-icon {
+    list-style-type: none;
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 20px;
+}
+
+ul li.top-icon {
+    padding-top: 10px;
+    color: #2b4969;
+    font-size: 30px;
+}
+
+
+/* Top Nav Row-1 */
+
+.nav-row1 {
+    margin-left: 70px;
+    background-color: #ffffff;
+}
+
+.nav-row1 li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 15px 0 15px 0;
+}
+
+.top-icon-nav {
+    color: #6d5ec5;
+    font-size: 30px;
+    padding-right: 8px;
+    float: left;
+}
+
+
+.nav-row1 li:last-child {
+    color: #2e3642;
+    padding-left: 10px;
+}
+
+
+/* Top Nav Row-2 */
+
+
+.nav-row2 {
+    position: sticky !important;
+    top: 0;
+    position: -webkit-sticky;
+    margin-left: 70px;
+    background-color: #f6f7fa;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+
+.nav-row2 li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px 10px 0;
+}
+
 
 /* media query */
 
@@ -159,6 +238,10 @@ p {
     .circle {
         width: 40%;
         min-height: 90px;
+    }
+
+    .card-container {
+        margin-left: 50px;
     }
 
 
