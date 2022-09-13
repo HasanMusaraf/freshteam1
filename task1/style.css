@@ -10,6 +10,7 @@
 body {
     background-color: #ebeff3;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 
@@ -18,8 +19,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    position: absolute;
-    left: 0;
+    margin-left: 50px;
 
 }
 
@@ -27,7 +27,7 @@ body {
     padding-top: 30px;
     padding-bottom: 30px;
     margin-bottom: 20px;
-    width: 15.3%;
+    width: 17.3%;
     margin-right: 30px;
     display: flex;
     flex-direction: column;
@@ -64,7 +64,7 @@ p {
 
 .circle {
     background-color: #d4e5fd;
-    width: 60%;
+    width: 50%;
     min-height: 150px;
     border-radius: 50%;
     display: flex;
@@ -154,7 +154,7 @@ ul.side-nav {
     z-index: 2;
 }
 
-ul li.side-icon {
+ul li.side-icon:not(.case-active) {
     list-style-type: none;
     font-size: 20px;
     text-align: center;
@@ -162,17 +162,28 @@ ul li.side-icon {
     padding-bottom: 20px;
 }
 
-ul li.top-icon {
+ul li#top-icon {
     padding-top: 10px;
     color: #2b4969;
-    font-size: 30px;
+    font-size: 33px;
+}
+
+.case-active{
+    list-style-type: none;
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #6d5ec5;
+    padding: 10px 0 10px 0;
+    margin:0 10px 10px 10px;
+    border-radius: 10px;
 }
 
 
 /* Top Nav Row-1 */
 
 .nav-row1 {
-    margin-left: 70px;
+    margin-left: 40px;
     background-color: #ffffff;
 }
 
@@ -180,20 +191,18 @@ ul li.top-icon {
     list-style-type: none;
     display: flex;
     align-items: center;
-    padding: 15px 0 15px 0;
+    padding: 1px 0 1px 0;
+    position: relative;
 }
 
-.top-icon-nav {
-    color: #6d5ec5;
-    font-size: 30px;
-    padding-right: 8px;
-    float: left;
-}
-
-
-.nav-row1 li:last-child {
+.nav-row1 li p {
     color: #2e3642;
-    padding-left: 10px;
+    position: absolute;
+    left: 80px;
+}
+
+.top-icon-nav img{
+    width: 100px;
 }
 
 
@@ -201,19 +210,52 @@ ul li.top-icon {
 
 
 .nav-row2 {
-    position: sticky !important;
+    position: sticky ;
     top: 0;
-    position: -webkit-sticky;
     margin-left: 70px;
     background-color: #f6f7fa;
     margin-bottom: 10px;
     z-index: 1;
+    font-weight:bold;
 }
 
-.nav-row2 li {
+.nav-row2 li:not(.add-job,.job-active) {
     list-style-type: none;
     display: inline-block;
-    padding: 10px 20px 10px 0;
+    padding: 15px 20px 15px 0;
+    font-size: smaller;
+    color: #5b6774;
+}
+
+.add-job{
+    list-style-type: none;
+    display: inline-block;
+    color: #8f949c;
+    border: 1px solid #dddfe5;
+    padding: 5px;
+    font-size:smaller;
+    float: right;
+    margin: 10px 20px 0 0;
+    background-color: white;
+    border-radius: 5px;
+
+}
+
+.add-job:hover{
+    background-color: #f6f7fa;
+    color:#5b6774;
+
+}
+
+
+.job-active{
+    list-style-type: none;
+    display: inline-block;
+    padding: 15px 20px 15px 0;
+    font-size: smaller;
+    color: #6d5ec5;
+    border-bottom: 3px solid #6d5ec5;
+
 }
 
 
@@ -223,6 +265,11 @@ ul li.top-icon {
 @media only screen and (max-width: 1578px) {
     .circle {
         min-height: 120px;
+
+    }
+
+    body{
+        overflow-x: hidden;
 
     }
 }
@@ -242,6 +289,7 @@ ul li.top-icon {
 
     .card-container {
         margin-left: 50px;
+        
     }
 
 
