@@ -1,0 +1,113 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container1{
+    width: 95%;
+    height: 200px;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    padding: 0 50px 0 50px;
+    gap: 3em;
+    margin: 50px;
+}
+
+.con1-child1{
+    width: 200px;
+    height: 140px;
+    background-color: blue;
+}
+
+.con1-child2{
+    width: 200px;
+    height: 140px;
+    background-color: yellow;
+    margin-left: auto;
+    
+
+}
+
+.con1-child3{
+    width: 200px;
+    height: 140px;
+    background-color: red;
+
+}
+
+
+/* container-2 */
+
+
+.container2{
+    margin: 50px;
+    height: 700px;
+    background-color:gray ;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.con2-child1{
+    height: 100px;
+    background-color: green;
+}
+
+.con2-child2{
+    height: calc(700px - 200px);
+    background-color: yellow;
+}
+
+
+.con2-child3{
+    height: 100px;
+    background-color: red;
+} 
+
+
+
+
+/* Container-3 */
+
+.container3{
+    background-color: aqua;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    margin: 50px;
+}
+
+.con3-text{
+    border: 2px solid gray;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 50px;
+}
+
+.btn1{
+ padding: 10px;
+ margin-left: 20px;
+
+}
+
+.btn2{
+    padding: 10px;
+    margin-left: 20px;
+}
+
+
+$px-150: 150px;
+$px-300: 300px;
+$trans: transparent;
+$red: red;
+
+
+@mixin task1 {
+    margin: 100px;
+
+}
