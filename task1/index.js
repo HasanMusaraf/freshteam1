@@ -85,6 +85,8 @@ img5.onclick = function () {
 }
 
 
+// for button
+
 let arrayImg = [firstImg, secondImg, thirdImg, fourthImg, fifthImg]
 
 let i = 0;
