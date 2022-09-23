@@ -46,8 +46,11 @@ h1 {
 }
 
 .img-size {
-  width: 15%;
-  padding-bottom: 20px;
+  width: 7%;
+  margin-left: 100px;
+  border: 2px solid yellow;
+  margin-bottom: 20px;
+
 }
 
 .ov {
@@ -68,16 +71,43 @@ h1 {
 
 }
 
+body{
+  overflow-x: hidden;
+  margin-left: 100px;
+}
+
 
 // Slide buttons
 
 
-.slide-btns{
-  margin-top: 50px;
-  margin-bottom: 100px;
+// .slide-btns{
+//   margin-top: 50px;
+//   margin-bottom: 100px;
+// }
+
+// .slide-btns button{
+//   padding: 7px 10px 7px 10px;
+//   margin-right: 10px;
+// }
+
+.img-right-side{
+  position: relative;
+  bottom: 500px;
+  left: 50vh;
 }
 
-.slide-btns button{
-  padding: 7px 10px 7px 10px;
-  margin-right: 10px;
+.img-zoom{
+  border: 2px solid yellow;
+ 
+}
+
+.dynamic-img{
+  margin-left: 100px;
+  list-style-type: none;
+}
+
+
+
+.container{
+  list-style-type: none;
 }

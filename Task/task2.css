@@ -113,8 +113,10 @@ h1 small {
 }
 
 .img-size {
-  width: 15%;
-  padding-bottom: 20px;
+  width: 7%;
+  margin-left: 100px;
+  border: 2px solid yellow;
+  margin-bottom: 20px;
 }
 
 .ov {
@@ -134,14 +136,28 @@ h1 small {
   align-items: center;
 }
 
-.slide-btns {
-  margin-top: 50px;
-  margin-bottom: 100px;
+body {
+  overflow-x: hidden;
+  margin-left: 100px;
 }
 
-.slide-btns button {
-  padding: 7px 10px 7px 10px;
-  margin-right: 10px;
+.img-right-side {
+  position: relative;
+  bottom: 500px;
+  left: 50vh;
+}
+
+.img-zoom {
+  border: 2px solid yellow;
+}
+
+.dynamic-img {
+  margin-left: 100px;
+  list-style-type: none;
+}
+
+.container {
+  list-style-type: none;
 }
 
 /*# sourceMappingURL=task2.css.map */
