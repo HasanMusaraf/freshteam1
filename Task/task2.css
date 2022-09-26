@@ -158,6 +158,15 @@ body {
 
 .container {
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 100px;
+  position: relative;
+  bottom: 200px;
+}
+
+.image-wrapper {
+  margin: 20px;
 }
 
 /*# sourceMappingURL=task2.css.map */

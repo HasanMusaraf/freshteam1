@@ -120,7 +120,7 @@ let img2 = "https://rukminim1.flixcart.com/image/416/416/l3rmzrk0/computer/d/k/v
 let img3 = "https://rukminim1.flixcart.com/image/416/416/l3rmzrk0/computer/m/6/l/-original-imagetjfb3vtfyky.jpeg?q=70";
 let img4 = "https://rukminim1.flixcart.com/image/416/416/l3rmzrk0/computer/c/g/9/-original-imagetjyrd3mk7ys.jpeg?q=70";
 let img5 = "https://rukminim1.flixcart.com/image/416/416/l3rmzrk0/computer/a/d/k/-original-imagetjyppebgbk7.jpeg?q=70";
-let dyn_img = [ img3, img4, img5]
+let dyn_img = [img3, img4, img5]
 
 
 
@@ -158,8 +158,36 @@ function loadMore() {
 
 }
 
+
+
+
 container.addEventListener("click", function (event) {
     if (event.target.classList.contains('image-wrapper')) {
         zoom.src = event.target.src
     }
 })
+
+
+// for button
+
+let arrayImg = [img1,img2,img3, img4, img5]
+
+let i = 0;
+
+function next() {
+    i++;
+    if (i > arrayImg.length - 1) {
+        i = 0;
+    }
+    zoom.src = arrayImg[i]
+}
+
+let j = arrayImg.length - 1;
+
+function previous() {
+    i--;
+    if (i < 0) {
+        i = arrayImg.length - 1;
+    }
+    zoom.src = arrayImg[i]
+}
