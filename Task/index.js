@@ -121,6 +121,7 @@ let img3 = "https://rukminim1.flixcart.com/image/416/416/l3rmzrk0/computer/m/6/l
 let img4 = "https://rukminim1.flixcart.com/image/416/416/l3rmzrk0/computer/c/g/9/-original-imagetjyrd3mk7ys.jpeg?q=70";
 let img5 = "https://rukminim1.flixcart.com/image/416/416/l3rmzrk0/computer/a/d/k/-original-imagetjyppebgbk7.jpeg?q=70";
 let dyn_img = [img3, img4, img5]
+let arrayImg = [img1,img2,img3, img4, img5]
 
 
 
@@ -141,36 +142,26 @@ function loadMore() {
     dyn_img.forEach(element => {
         let appendLi = document.createElement("li");
         let appendimg = document.createElement("img");
-        appendimg.className = "image-wrapper";
+        appendimg.className = "img-size";
         appendimg.src = element;
         appendLi.appendChild(appendimg)
-        container.appendChild(appendLi)
+        ul_img.appendChild(appendLi)
 
     });
 
-    container.addEventListener("click", function (event) {
-        if (event.target.classList.contains('image-wrapper')) {
+    ul_img.addEventListener("click", function (event) {
+        if (event.target.classList.contains('img-size')) {
             zoom.src = event.target.src
         }
     })
 
     document.querySelector(".loadMore").style.display = "none";
-
+    arrayImg.push(img3,img4,img5)
 }
-
-
-
-
-container.addEventListener("click", function (event) {
-    if (event.target.classList.contains('image-wrapper')) {
-        zoom.src = event.target.src
-    }
-})
 
 
 // for button
 
-let arrayImg = [img1,img2,img3, img4, img5]
 
 let i = 0;
 
