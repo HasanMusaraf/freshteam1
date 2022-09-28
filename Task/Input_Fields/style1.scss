@@ -1,0 +1,31 @@
+.container{
+    align-items: center;
+    margin: 200px;
+    border: 2px solid gray;
+    padding: 100px 100px 100px 100px ;
+    position: relative;
+
+}
+
+.input-container div{
+    margin-bottom: 10px;
+
+}
+
+.output-container{
+    position: absolute;
+    float: right;
+    top: 90px;
+    right: 100px;
+    padding-bottom: 20px;
+}
+
+.output-container div{
+    margin-bottom: 10px;
+}
+
+.address-val{
+    display: flex;
+    flex-wrap: wrap;
+    width: 220px;
+}

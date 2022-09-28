@@ -11,7 +11,8 @@ module.exports = function(grunt) {
           },
           files: {
             'style.css' : 'style.scss',
-            'task2.css' : 'task2.scss'
+            'task2.css' : 'task2.scss',
+            '/Users/mmusaraf/freshteam/Task/Input_Fields/style1.css' : '/Users/mmusaraf/freshteam/Task/Input_Fields/style1.scss'
 
           }
         },
@@ -20,6 +21,7 @@ module.exports = function(grunt) {
         css: {
           files: 'style.scss',
           files: 'task2.scss',
+          files: '/Users/mmusaraf/freshteam/Task/Input_Fields/style1.scss',
           tasks: ['sass']
         }
       }
