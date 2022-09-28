@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container1 {
+  width: 95%;
+  height: 200px;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  padding: 0 50px 0 50px;
+  gap: 3em;
+  margin: 50px;
+}
+
+.con1-child1 {
+  width: 200px;
+  height: 140px;
+  background-color: blue;
+}
+
+.con1-child2 {
+  width: 200px;
+  height: 140px;
+  background-color: yellow;
+  margin-left: auto;
+}
+
+.con1-child3 {
+  width: 200px;
+  height: 140px;
+  background-color: red;
+}
+
+/* container-2 */
+.container2 {
+  margin: 50px;
+  height: 700px;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.con2-child1 {
+  height: 100px;
+  background-color: green;
+}
+
+.con2-child2 {
+  height: calc(700px - 200px);
+  background-color: yellow;
+}
+
+.con2-child3 {
+  height: 100px;
+  background-color: red;
+}
+
+/* Container-3 */
+.container3 {
+  background-color: aqua;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  margin: 50px;
+}
+
+.con3-text {
+  border: 2px solid gray;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 50px;
+}
+
+.btn1 {
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.btn2 {
+  padding: 10px;
+  margin-left: 20px;
+}
+
+h1 {
+  margin: 40px;
+  background-color: yellow;
+  padding: 10px 10px 10px 10px;
+}
+h1 small {
+  color: red;
+}
+
+.triangle {
+  margin: 100px;
+  width: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 300px solid red;
+}
+
+.div {
+  margin: 0 30px 50px 200px;
+}
+
+.side-img {
+  float: left;
+}
+
+.img-size {
+  width: 7%;
+  margin-left: 100px;
+  border: 2px solid yello;
+  margin-bottom: 20px;
+}
+
+.ov {
+  position: relative;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.ov:hover .img-overlay {
+  background-color: orange;
+  width: 15%;
+  height: 78%;
+  position: absolute;
+  top: 0;
+  opacity: .2;
+  display: flex;
+  align-items: center;
+}
+
+body {
+  overflow-x: hidden;
+  margin-left: 100px;
+}
+
+.img-right-side {
+  position: relative;
+  bottom: 500px;
+  left: 50vh;
+}
+
+.img-zoom {
+  border: 2px solid yellow;
+}
+
+.dynamic-img {
+  margin-left: 100px;
+  list-style-type: none;
+}
+
+.container {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 100px;
+  position: relative;
+  bottom: 200px;
+}
+
+.image-wrapper {
+  margin: 20px;
+}
+
+/*# sourceMappingURL=task2.css.map */

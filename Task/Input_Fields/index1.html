@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="input-container">
+            <div class="name">
+                <input type="text" id="text" placeholder="name">
+            </div>
+            <div class="gender">
+                <label for="male">Male</label> <input type="radio" name="male" id="male" onclick="myGender(this.value)"
+                    value="male">
+                <label for="female">Female</label><input type="radio" name="female" id="female"
+                    onclick="myGender(this.value)" value="female">
+            </div>
+            <div class="agree">
+                <label for="agree">Agree</label><input name="agree" onclick="checkbox(this.value)" type="checkbox"
+                    id="check" value="agreed">
+            </div>
+
+            <div>
+                <select onchange="city()" id="select">
+                    <option value="">City</option>
+                    <option value="chennai">chennai</option>
+                    <option value="goa">Goa</option>
+                    <option value="delhi">Delhi</option>
+                </select>
+            </div>
+
+            <div class="address">
+                <textarea id="address" placeholder="address" cols="30" rows="4"></textarea>
+            </div>
+
+            <div class="number">
+                <input type="number" id="number" placeholder="number">
+            </div>
+
+            <div>
+                <input type="file" onchange="fileUpload()" id="file">
+            </div>
+
+        </div>
+
+
+
+        <div class="output-container">
+            <div class="name-val">
+
+            </div>
+            <div class="male-val">
+
+            </div>
+
+
+            <div class="check-val">
+
+            </div>
+
+            <div class="city-val">
+
+            </div>
+
+            <div class="address-val">
+            </div>
+
+            <div class="number-val">
+
+            </div>
+
+
+            <div class="img">
+                <img id="img">
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <script src="index1.js"></script>
+</body>
+
+</html>
